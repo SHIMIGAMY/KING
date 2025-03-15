@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente global para todo el texto */
+            font-size: 16px; /* Tamaño de letra predeterminado */
+            line-height: 1.5; /* Altura de línea para mejorar legibilidad */
+            color: black; /* Color de texto global */
+            margin: 0; /* Elimina márgenes predeterminados */
+            padding: 1cm; /* Espacio entre el marco y el borde de pantalla */
+            background-color: lightgrey; /* Se usa para distinguir el fondo */
+        }
+
+        .contenedor {
+            margin: 1cm; /* Margen de todos los lados */
+            position: relative; /* Para el control preciso de la posición */
+            border: 5px solid black; /* Grosor, estilo y color */
+            padding: 0.25cm; /* Espacio dentro del marco */
+            background-color: white; /* Color de fondo interno */
+            height: 800px; /* Altura fija para el marco */
+        }
+
+        .linea-Horizontal {
+            position: absolute;
+            top: 0; /* Posiciona la línea horizontal en la parte superior */
+            left: 0;
+            width: 100%; /* Anchura del contenedor horizontal */
+            height: 160px; /* Grosor de línea azul */
+            background-color: #0D47A1;
+        }
+
+        .linea-Vertical {
+            position: absolute;
+            top: 0;
+            left: 0; /* Coloca la línea al lado izquierdo */
+            width: 200px; /* Grosor de la línea vertical */
+            height: 100%; /* Altura de la línea vertical */
+            background-color: #0D47A1;
+        }
+
+        .contenido {
+            position: relative;
+            z-index: 1; /* Asegura que el contenido esté encima de las líneas */
+            display: flex; /* Flexbox para alinear elementos en una fila */
+            align-items: center; /* Centra verticalmente el texto con la imagen */
+            gap: 15px; /* Espaciado entre la imagen y el texto */
+        }
+			.Area-Blanca{
+				position: absolute;/para ubicar correctamente el texto/
+				top:240px;/debajo de la linea horizontal/
+				left:300px;/a la derecha de la linea vertical/
+				right:20px;/espaciado inferior/
+				bottom: 20px; /espaciado inferior/
+				padding:20px;/Espacio interno del texto/
+				overflow:auto;/para poder desplazar el contenido al ser largo/
+				background-color: 0;/Fondo Blanco/
+				z-index:2; /para asegurar que este encima de otros elementos/
+				height: 140%; /* Altura de la línea vertical */
+
+			}
+        p {
+            margin: 10px;
+        }
+    </style> 
+</head>
+<body>
+    <div class="contenedor">
+        <div class="linea-Horizontal"></div>
+        <div class="linea-Vertical"></div>
+
+        <div class="contenido">
+            <img src="https://github.com/SHIMIGAMY/KING/blob/prueba1/Imagen1.png?raw=true" width="170" height="125" alt="Imagen">
+            <center><h1 style="margin: 0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YONATHANTH SHEVENTHS <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BLONDEL MARTIN</h1><b><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMO VERDE SECTOR LOS PINOS, CASA 192-A </p></b></center>
+        </div>
+        
+        <p style="position: relative;"><br><big><u><b>&nbsp;Datos Personales </b></u></big><b><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOMBRES:</b><br>Yonathanth Sthevenths.<br><br> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APELLIDOS:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blondel Martin.<br><br><b>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;C.I:</b>31.217.504<br><br><b>&nbsp;&nbsp;&nbsp;&nbsp;Estao Civil:</b> Soltero.<br><br><b>Fecha de Nacimiento:</b><br>&nbsp;&nbsp;6 de Marzo del 2006.<br><br><b>Lugar de Nacimiento:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Los teques.<br><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edad:</b>18.<br><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telefono:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0412-0195406<br><br><b>&nbsp;&nbsp;&nbsp;&nbsp;Correo Electronio</b><br>&nbsp;&nbsp;&nbsp;&nbsp;yonathanthblondel4<br>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@gmail.com</p>
+    </div>
+    <div class="Area-Blanca";>
+    	<h2><center><b><u>Estudios Realizados</u></b></center></h2>
+    	<p><ul>
+    	<li>&#10148;<big>&nbsp;<b>Primaria:</b>&nbsp;U.E.Jesús María Sifontes</big></li><br>	
+    	<li>&#10148;<big><b>Segundaria:</b>&nbsp;Unidad Educativa Saleciana "San Jose"</big></li><br>
+    	<li>&#10148;<big><b>Universidad:&nbsp;U.P.T.A.M.C.A</b>(Estudiante de Ingenieria en &nbsp;&nbsp;&nbsp;&nbsp;Informatica,&nbsp;&nbsp;2<sup>do</sup>año, IV trayecto)</big></li>
+    	</ul>
+    	<p>_____________________</p><br>
+   	 	</p>
+   	 	<ul>
+   	 	<h2><center><b><u>Cursos Realizados</u></b></center></h2>
+    	<li>&#10148; <big>Tecnico en segurida informatica (analisis de riesgos)</big></li>	<br>
+    	<li>&#10148; <big> Tecnico en reparacion de laptops</big></li><br>
+    	<li>&#10148; <big> Brigada Infantil de Bomberos de Miranda.Conocimiento en <br>casis de Emergencias</big></li>
+    	
+    	</ul>
+</body>
+</html>
